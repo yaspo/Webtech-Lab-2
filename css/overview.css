@@ -1,0 +1,27 @@
+h1 {
+	color: orange;
+	font-weight: bold;
+}
+
+header {
+	background-color: #494e61;
+}
+
+.banner {
+	background-color: #ffeef0;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+.logo {
+	background-image: url("../KWEENI-ASSETS/logo.svg");
+	width: 50px;
+	height: 50px;
+}
+
+.button {
+	color: white;
+	background-color: #3b1cff;
+}
