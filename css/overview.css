@@ -21,12 +21,13 @@ header {
 }
 
 h2 {
-	font-weight: bold;
 	color: #494e61;
+	font-family: ultra;
 }
 
 p {
 	color: #494e61;
+	font-family: sans-serif;
 }
 
 .logo {
@@ -118,4 +119,100 @@ header .profile img {
 	border-radius: 5px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.hot {
+	padding: 0px 7px;
+	padding-top: 20px;
+}
+
+.hot h2 {
+	font-size: 1.5em;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.hot .topics {
+	display: grid;
+}
+
+.hot .topics li {
+	display: grid;
+	grid-template-columns: 45px auto 40px;
+	grid-gap: 10px;
+
+	border-bottom: 2px solid #f5f1f1;
+	padding: 10px 0;
+}
+
+.hot .topics .likes {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	padding: 12px 0;
+	background-color: #eeeeee;
+}
+
+.hot .topics .likes:hover {
+	cursor: pointer;
+}
+
+.hot .topics .likes .like-img {
+	background-image: url('../KWEENI-ASSETS/icon-cool.svg');
+	width: 22px;
+	height: 22px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	align-self: end;
+	justify-self: center;
+}
+
+.hot .topics .likes .amount {
+	align-self: end;
+	justify-self: center;
+	font-size: 0.8em;
+	color: #818baf;
+}
+
+.hot .topics .question {
+	align-self: center;
+	font-family: serif;
+	font-size: 1.2em;
+}
+
+.hot .topics .question:first-letter {
+	text-transform: uppercase;
+}
+
+.hot .topics .user {
+	display: grid;
+}
+
+.hot .topics .userpic {
+	width: 30px;
+	height: 30px;
+	align-self: center;
+	justify-self: end;
+	border-radius: 7px;
+}
+
+.hot .topics .userpic:hover {
+	cursor: pointer;
+}
+
+.hot .topics .username {
+	display: none;
+	text-transform: capitalize;
+}
+
+footer {
+	padding: 50px;
+	text-align: center;
+}
+
+footer a {
+	color: blue;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 0.9em;
 }
