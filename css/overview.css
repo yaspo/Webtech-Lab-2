@@ -44,7 +44,7 @@ p {
 
 /* Actual layout, grid and stuff */
 
-header {
+header .container{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
@@ -86,7 +86,7 @@ header .profile img {
 	border-radius: 7px;
 }
 
-.banner {
+.banner .container {
 	display: grid;
 	grid-template-rows: auto auto auto;
 	grid-row-gap: 25px;
@@ -108,13 +108,16 @@ header .profile img {
 	font-size: 1.5em;
 	background-color: #f5f1f1;
 	color: #494e61;
+
+	justify-self:center;
+	width: 80%;
 }
 
 .banner .button {
 	text-align: center;
 	font-size: 1.5em;
 	padding: 20px;
-	width: 80%;
+	width: 300px;
 	justify-self: center;
 	border-radius: 5px;
 	text-transform: uppercase;
@@ -137,7 +140,7 @@ header .profile img {
 	display: grid;
 }
 
-.hot .topics li {
+.topic {
 	display: grid;
 	grid-template-columns: 45px auto 40px;
 	grid-gap: 10px;
@@ -146,18 +149,18 @@ header .profile img {
 	padding: 10px 0;
 }
 
-.hot .topics .likes {
+.topic .likes {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 	padding: 12px 0;
 	background-color: #eeeeee;
 }
 
-.hot .topics .likes:hover {
+.topic .likes:hover {
 	cursor: pointer;
 }
 
-.hot .topics .likes .like-img {
+.topic .like-img {
 	background-image: url('../KWEENI-ASSETS/icon-cool.svg');
 	width: 22px;
 	height: 22px;
@@ -167,28 +170,31 @@ header .profile img {
 	justify-self: center;
 }
 
-.hot .topics .likes .amount {
+.topic .like-amount {
 	align-self: end;
 	justify-self: center;
 	font-size: 0.8em;
 	color: #818baf;
 }
 
-.hot .topics .question {
+.topic .question {
 	align-self: center;
 	font-family: serif;
 	font-size: 1.2em;
+	color: #494e61;
+	text-decoration: none;
+	display: inline-block;
 }
 
-.hot .topics .question:first-letter {
+.topic .question:first-letter {
 	text-transform: uppercase;
 }
 
-.hot .topics .user {
+.topic .user {
 	display: grid;
 }
 
-.hot .topics .userpic {
+.topic .userpic {
 	width: 30px;
 	height: 30px;
 	align-self: center;
@@ -196,11 +202,11 @@ header .profile img {
 	border-radius: 7px;
 }
 
-.hot .topics .userpic:hover {
+.topic .userpic:hover {
 	cursor: pointer;
 }
 
-.hot .topics .username {
+.topic .username {
 	display: none;
 	text-transform: capitalize;
 }
@@ -215,4 +221,61 @@ footer a {
 	font-weight: bold;
 	font-family: sans-serif;
 	font-size: 0.9em;
+}
+
+@media screen and (min-width: 700px) {
+
+	.topic {
+		grid-template-columns: 80px auto 200px;
+	}
+
+	.topic .user {
+		grid-template-columns: auto 30px;
+		grid-gap: 10px;
+	}
+
+	.topic .username {
+		display: inline-block;
+		align-self: center;
+		justify-self: end;
+		color: #d9806a;
+	}
+
+	.topic .likes {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		padding: 7px 0px;
+		grid-gap: 10px;
+	}
+
+	.topic .likes .like-img {
+		justify-self: end;
+		align-self: center;
+	}
+
+	.topic .likes .like-amount {
+		justify-self: start;
+		align-self: center;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+	
+	.banner .container {
+		width: 1200px;
+		margin: auto;
+	}
+
+	header .container {
+		width: 1200px;
+		margin: auto;
+	}
+
+	.hot {
+		width: 1200px;
+		margin: auto;
+	}
+
+
 }
