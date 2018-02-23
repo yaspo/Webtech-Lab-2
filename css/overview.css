@@ -1,6 +1,14 @@
+/* Basic layout / colours stuff */
+
+@font-face {
+	font-family: 'ultra';
+	src: url('ultra.ttf');
+}
+
 h1 {
-	color: orange;
+	color: #fa5b33;
 	font-weight: bold;
+	font-family: ultra;
 }
 
 header {
@@ -13,6 +21,11 @@ header {
 
 h2 {
 	font-weight: bold;
+	color: #494e61;
+}
+
+p {
+	color: #494e61;
 }
 
 .logo {
@@ -24,4 +37,7 @@ h2 {
 .button {
 	color: white;
 	background-color: #3b1cff;
+	font-family: ultra;
 }
+
+/* Actual layout, grid and stuff */
