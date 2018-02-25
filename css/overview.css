@@ -125,6 +125,27 @@ header .profile img {
 	text-decoration: none;
 }
 
+.likes{
+  background-color: #FCEFF0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 35% 35%;
+}
+
+.likes .likes__question{
+    background-color: #f3e6e7;
+    color: #4F47DB;
+    font-family: Helvetica, sans-serif;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    align-items: center;
+    justify-content: center;
+}
+.likes .likes__question img{
+    width: 30px;
+}
+
 .hot {
 	padding: 0px 7px;
 	padding-top: 20px;
