@@ -128,7 +128,13 @@ header .profile img {
 .likes{
   background-color: #FCEFF0;
   display: grid;
-  grid-template-columns: 1fr 1fr 35% 35%;
+  grid-template-columns: 1fr 1fr 25% 45%;
+    grid-gap: 10px;
+}
+
+.likes img{
+    width: 30px;
+    border-radius: 3px;
 }
 
 .likes .likes__question{
@@ -144,8 +150,31 @@ header .profile img {
 }
 .likes .likes__question img{
     width: 30px;
+    justify-items: end;
+}
+.likes .likes__question a{
+    grid-column: 1/3;
+    justify-items: center;
 }
 
+.likes .likes__pictures{
+    display: grid;
+    grid-column: 3/4;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-self: center;
+}
+.likes .likes__update{
+    grid-column: 4/5;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: repeat(2, 1fr);
+}
+.likes .likes__update p{
+    grid-column: 1/2;
+    align-content: center;
+    justify-content: flex-end;
+}
 .hot {
 	padding: 0px 7px;
 	padding-top: 20px;
