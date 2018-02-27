@@ -36,10 +36,12 @@ p {
 
 
 
-.button {text-decoration: none;
+.button {
+	text-decoration: none;
 	color: #e4e0ff;
 	background-color: #3b1cff;
-	font-family: ultra;padding: 20px 40px;border-radius: 8px;
+	font-family: 'ultra';
+	padding: 20px 40px;border-radius: 8px;
   text-transform: uppercase;
 }
 
