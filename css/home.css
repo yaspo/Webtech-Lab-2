@@ -4,10 +4,12 @@
 
 body{font-family: roboto slab;}
 
-h1 {font-size: 1.5em;
+h1 {display: grid;font-size: 1.25em;
 	color: #494E61;
-
-
+padding-bottom: 25px;
+padding-top: 25px;
+justify-self:center;width: 65%;
+text-align: center;
 }
 
 header, banner {
@@ -34,9 +36,9 @@ p {
 	font-family: ultra;
 	border-radius: 5px;
 	text-align: center;
-	height: 5em;
-	width:15em;
-	align-self: center;
+	height: 3em;
+	width:9em;padding-top: 7.5px;
+
 }
 
 /* Actual layout, grid and stuff */
@@ -54,13 +56,13 @@ grid-template: 1fr 1fr 1fr}
 
     align-self: center;
     justify-self: center;
-    padding: 20px;width:80%;}
+  width:100%;margin-left: 20%;}
 
 
 header .button{text-decoration: none;
-    justify-self: center;
+
   text-transform: uppercase;font-size: 11px;color: white;
-max-width: 1200px;}
+max-width: 1200px;justify-self: center;align-self:center;}
 
 
 
@@ -75,7 +77,7 @@ grid-template-columns:repeat(3, 1fr);}
 
 
 section {display: grid;justify-items: center;margin-top: 75px;}
-section p{width: 75%;text-align: center;}
+section p{width: 75%;text-align: center;font-family: roboto slab}
 
 
 
@@ -85,18 +87,23 @@ section p{width: 75%;text-align: center;}
 
 @media (min-width: 480px) {
 	banner{
-grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));}
+.button{height: 4em;
+width:12em;padding-top: 15px;}
 
 
 }
 @media (min-width:760px) {
 
+	banner{display: grid;grid-template-columns: repeat(10, 1fr);padding-top: 50px;}
+	h1{
 
-	banner{display: grid;grid-template-columns: repeat(10, 1fr);}
-	h1{ grid-column: 1 / 2;
-		  grid-row: 3 / 4;
-			width: 40%;margin-left: 50px;
+		  grid-row: 1 / 4;
+			width: 40%;margin-left: 50px;font-size: 1.5em;
+			padding-bottom: 50px;padding-top: 0;
 
+			justify-self:start;
+			text-align:left;
 
         }
 .user1{grid-column: 6 / 7;
