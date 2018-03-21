@@ -125,56 +125,6 @@ header .profile img {
 	text-decoration: none;
 }
 
-.likes{
-  background-color: #FCEFF0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 25% 45%;
-    grid-gap: 10px;
-}
-
-.likes img{
-    width: 30px;
-    border-radius: 3px;
-}
-
-.likes .likes__question{
-    background-color: #f3e6e7;
-    color: #4F47DB;
-    font-family: Helvetica, sans-serif;
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; 
-    align-items: center;
-    justify-content: center;
-}
-.likes .likes__question img{
-    width: 30px;
-    justify-items: end;
-}
-.likes .likes__question a{
-    grid-column: 1/3;
-    justify-items: center;
-}
-
-.likes .likes__pictures{
-    display: grid;
-    grid-column: 3/4;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    align-self: center;
-}
-.likes .likes__update{
-    grid-column: 4/5;
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: repeat(2, 1fr);
-}
-.likes .likes__update p{
-    grid-column: 1/2;
-    align-content: center;
-    justify-content: flex-end;
-}
 .hot {
 	padding: 0px 7px;
 	padding-top: 20px;
@@ -261,66 +211,6 @@ header .profile img {
 	text-transform: capitalize;
 }
 
-.chat{
-    padding: 2em 6em;
-    display: grid;
-    grid-template-columns: 35% 20% 45%;
-    grid-template-rows: repeat(6, 1fr);
-    grid-gap: 1em;
-}
-.chat article{
-    border: gainsboro solid 0.5px;
-    padding: 1em;
-    max-height: 100px;
-}
-.comment{
-    height: 60px;
-    background-color: #F6F6F6;
-}
-.comment input{
-    width: 100%;
-    height: 30px;
-    color: #F6F6F6;
-}
-
-.chat p{
-    font-family: serif;
-    color: gray;
-}
-
-.chat img{
-    width: 30px;
-}
-
-.chat1{
-    grid-area: 1 / 1 / 1 / span 3;
-}
-
-.chat2{
-    grid-area: 2 / 2 / 2 / span 2;
-}
-
-.chat3{
-    grid-area: 3 / 2 / 3 / span 2;
-}
-
-#comment1{
-    grid-area: 4 / 3 / 4 / span 1;
-}
-
-.chat4{
-   grid-area: 5 / 1 / 5 / span 3;
-}
-
-#comment2{
-     grid-area: 6 / 3 / 6 / span 1;
-}
-
-.name{
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    padding: 1em 0;
-}
 footer {
 	padding: 50px;
 	text-align: center;
@@ -331,19 +221,6 @@ footer a {
 	font-weight: bold;
 	font-family: sans-serif;
 	font-size: 0.9em;
-}
-
-.react{
-    background-color: #444756;
-    padding: 2em;
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 10% 70% 20%;
-}
-
-.react img{
-    width: 50px;
 }
 
 @media screen and (min-width: 700px) {
